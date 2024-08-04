@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg1"
+    android:orientation="vertical"
+    tools:context="com.thirtyseventyc.gpian20.a6_notes_update">
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbarofcreatenote"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height=""-->
+    <!--        android:background="@color/white">-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:fontFamily="@font/poppins"
+            android:padding="20dp"
+            android:text="Update Notes"
+            android:textAlignment="center"
+            android:textColor="@color/yellob"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.019" />
+
+        <EditText
+            android:id="@+id/edit_notes_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittxtbg1"
+            android:fontFamily="@font/poppins"
+            android:hint="Title"
+
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_notes_sub_title"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittxtbg1"
+            android:fontFamily="@font/poppins"
+            android:hint="Sub Title"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/edit_notes_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittxtbg1"
+            android:fontFamily="@font/poppins"
+            android:hint="Url..."
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"/>
+
+
+        <EditText
+            android:id="@+id/edit_notes_main_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittxtbg1"
+            android:fontFamily="@font/poppins"
+            android:gravity="start"
+            android:hint="Notes..."
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit_done_btn_for_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/yellob"
+        android:src="@drawable/done_icon" />
+
+    <!--    </androidx.appcompat.widget.Toolbar>-->
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context="com.thirtyseventyc.gpian20.a4_notes_detail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notes_title_taken_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TITLE"
+                android:textStyle="bold"
+                android:textSize="34dp"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:id="@+id/notes_subTitle_taken_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"
+                android:text="HERE ARE THE SUBTITLES OF THE TOPICS\nMORE\nMORE "/>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/notes_main_taken_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="b ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege \njbvvjvhvsd verg ergr ger erg grege\njbvvjvhvsd verg ergr ger erg grege\njbvvjvhvsd verg ergr ger erg grege\njbvvjvhvsd verg ergr ger erg grege\njbvvjvhvsd verg ergr ger erg grege\njbvvjvhvsd verg ergr"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:text="More Ref : "
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/notes_link_taken_db"
+                android:layout_width="match_parent"
+                android:text="https://www.google.com/"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/blue"
+                android:layout_marginBottom="20dp"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/webView_link"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

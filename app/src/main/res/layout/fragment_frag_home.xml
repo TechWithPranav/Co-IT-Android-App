@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/body_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/browny"
+    tools:context="com.thirtyseventyc.gpian20.Initial">
+
+    <TextView
+        android:id="@+id/titleTxt7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Co:it"
+        android:textAlignment="center"
+        android:textColor="@color/yellob"
+        android:textSize="36dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bgY"
+        android:layout_width="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="400dp"
+        app:cardBackgroundColor="@color/yellob"
+        app:cardCornerRadius="0dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainContainHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/appbg5"
+        app:cardBackgroundColor="@color/browny"
+        app:cardCornerRadius="15dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/appbg5"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:addStatesFromChildren="false"
+                android:background="@color/trans"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="100dp">
+
+                <RelativeLayout
+                    android:id="@+id/dc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:forceHasOverlappingRendering="true"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/dateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal|top"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Loading..."
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/mainProgresss"
+                    style="@android:style/Widget.ProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="@color/yellob"
+                    android:outlineAmbientShadowColor="#B10000"
+                    android:outlineSpotShadowColor="#FB0000"
+                    android:progressBackgroundTint="@color/yellob"
+                    android:progressBackgroundTintMode="screen" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

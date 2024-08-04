@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/body_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thirtyseventyc.gpian20.Initila_Teacher"
+    android:background="@color/browny">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Bottom_navigation_t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:outlineAmbientShadowColor="#8FA5B6"
+
+        app:elevation="60dp"
+        android:outlineProvider="bounds"
+        android:elevation="10dp"
+        android:background="@drawable/bgeg1"
+        android:fadingEdgeLength="40dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemTextColor="@color/yellob"
+        app:menu="@menu/item_menu_teacher" />
+
+</RelativeLayout>

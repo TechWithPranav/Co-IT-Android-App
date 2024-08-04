@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:drawable="@android:color/transparent"
+    android:fadingEdge="vertical"
+    android:fadingEdgeLength="20dp"
+    android:requiresFadingEdge="horizontal|vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        android:backgroundTint="@color/trans"
+        android:backgroundTintMode="multiply"
+        android:drawable="@android:color/transparent"
+        android:fadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="50dp"
+        android:foregroundTint="@color/trans"
+        android:foregroundTintMode="multiply"
+        android:requiresFadingEdge="horizontal|vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/demoNoticePre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/lighyB"
+            android:elevation="5dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="5dp"
+            android:outlineAmbientShadowColor="#000000"
+            android:outlineSpotShadowColor="@color/browny"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:id="@+id/demoCardCon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:elevation="20dp"
+                android:fadingEdge="horizontal|vertical"
+                android:fadingEdgeLength="20dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:requiresFadingEdge="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#22FFF8E1"
+                    android:fadingEdge="horizontal|vertical"
+                    android:fadingEdgeLength="10dp"
+                    android:orientation="vertical"
+                    android:requiresFadingEdge="horizontal|vertical">
+
+                    <TextView
+                        android:id="@+id/noticeTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Loading..."
+                        android:textColor="@color/lighyB"
+                        android:textSize="22dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/noticeDesc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Loading..."
+                        android:textColor="@color/lighyB"
+                        android:textSize="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.523" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/demoByName2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins"
+                            android:text="~ Samay S. Navale"
+                            android:textColor="@color/browny"
+                            android:textSize="14dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/demoTitle"
+                            app:layout_constraintVertical_bias="1.0"
+                            tools:ignore="TextSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/demoDate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins"
+                            android:text="23 March 2023"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/browny"
+                            android:textSize="14dp"
+                            tools:ignore="TextSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/attachCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            app:cardBackgroundColor="#E3E2E2"
+                            app:cardCornerRadius="40dp">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:padding="5dp"
+                                app:srcCompat="@drawable/file_present_img" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

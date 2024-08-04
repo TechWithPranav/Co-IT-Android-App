@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg6"
+    android:orientation="vertical"
+    tools:context="com.thirtyseventyc.gpian20.MasalaChat">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/trans"
+        android:backgroundTint="@color/trans"
+        android:layoutAnimation="@anim/layout_animation" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        android:backgroundTint="@color/trans"
+        android:fadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="50dp"
+        android:requiresFadingEdge="horizontal|vertical"
+        app:cardBackgroundColor="@color/trans"
+        app:cardElevation="0dp"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/trans"
+            android:backgroundTint="@color/trans"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/trans"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/trans">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/trans"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/userinput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/edittxtbg1"
+                            android:hint="Enter Your Message"
+                            android:inputType="textMultiLine"
+                            android:maxWidth="300dp"
+                            android:maxHeight="100dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="#FEFEFE"
+                            android:textColorHint="@color/lighyB" />
+                    </LinearLayout>
+                </ScrollView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:maxHeight="100dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageButton
+                    android:id="@+id/sendbutton"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:background="@color/lighyB"
+                    android:maxHeight="100dp"
+                    app:srcCompat="@drawable/send" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
